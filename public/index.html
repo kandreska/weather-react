@@ -29,7 +29,97 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andreska's Final Weather App</title>
+          <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="weather-app">
+     <div class="container">
+     <header>
+      <form action="/" method="GET" class="form" id="search-form">
+          <input type="search" id="city-input" placeholder="Type a city" class="search-field" />
+          <button type="submit" class="btn btn-outline-light">Search</button>
+          <button type="submit" class="btn btn-outline-light-1" id="current-position">Current</button>
+      </form>
+      </header>
+      <h1>Welcome.</h1>
+      <h2 id="city"></h2>
+         <h2>
+        <span class="temperature" id="temperature"></span>
+        <span class="units">   °F</span>
+    <img
+    src = "https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+    id ="icon"
+    />
+        </h2>
+      <section class="description">
+        <p class=time>
+          <strong>
+            <span id="current-time"></span>
+          </strong></br>
+          <span id="description"></span>
+        </p>
+        
+        <p class="details">
+          Humidity: <span id="humidity"></span>%<br />
+          Wind: <span id="wind"></span> m/h
+        </p>
+        <hr/>
+        <div class="weather-forecast" id="forecast">
+       <div class="row">
+          <div class="col monday">Mon</div>
+          <div class="col tuesday">Tue</div>
+          <div class="col wednesday">Wed</div>
+          <div class="col thursday">Thu</div>
+          <div class="col friday">Fri</div>
+          <div class="col saturday">Sat</div>
+          <div class="col sunday">Sun</div>
+        </div>
+        <div class="row">
+            <div class="col column-one">🌤</div>
+            <div class="col column-two">🌤</div>
+            <div class="col column-three">🌤</div>
+            <div class="col column-four">⛈</div>
+            <div class="col column-five">⛈</div>
+            <div class="col column-six">🌧</div>
+            <div class="col column-seven">🌤</div>
+          </div>
+        </div>
+         <div class="weather-forecast" id="forecast"></div>
+        <div class="row">
+          <div class="col temperature-monday"></div>
+          <div class="col temperature-tuesday"></div>
+          <div class="col temperature-wednesday"></div>
+          <div class="col temperature-thursday"></div>
+          <div class="col temperature-friday"></div>
+          <div class="col temperature-saturday"></div>
+          <div class="col temperature-sunday"></div>
+        </div>
+        </div>
+        </section>
+        <footer></footer>
+        </div>
+        </div>
+    <div class="signature">
+      <small>
+      <a href="https://github.com/kandreska/final-project-weather-app.git">
+      Open Source Code</a> <span> by Kristin Andreska </span>
+      </small>
+      </div>
+    <script src="src/app.js"></script>
+  </body>
+</html><!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
