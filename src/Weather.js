@@ -1,5 +1,9 @@
-import React, { useState } from "react";
-import WeatherInfo from "./WeatherInfo";
-import WeatherForecast from "./WeatherForecast";
-import axios from "axios";
-import "./Weather.css";
+import React, { Fragment } from "react";
+
+export default function Weather(props) {
+  return (
+    <Fragment>
+      <h1>Weather</h1>
+    </Fragment>
+  );
+}
