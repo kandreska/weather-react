@@ -8,10 +8,6 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Weather defaultCity="New York" />
-
-        <footer>
-          This project was coded by Kristin Andreska hosted on Netlify
-        </footer>
       </div>
     </div>
   );
